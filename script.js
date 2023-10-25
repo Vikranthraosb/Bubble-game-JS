@@ -1,4 +1,4 @@
-var time=20;
+var time=30;
 var score=0;
 var hitno=0;
 function makebubble(){
