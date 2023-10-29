@@ -10,7 +10,7 @@ function makebubble(){
   document.querySelector("#panelbottom").innerHTML=clutter;
 
 }
-makebubble();
+makebubble(); 
 function runtimer(){
 var abc=setInterval(function(){
  if(time>0){
