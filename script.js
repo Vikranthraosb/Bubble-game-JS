@@ -1,4 +1,4 @@
-var time=30;
+var time=35;
 var score=0;
 var hitno=0;
 function makebubble(){
@@ -18,7 +18,6 @@ var abc=setInterval(function(){
     time--;
     document.querySelector("#timer").innerHTML=time
     document.querySelector("#timer").style.color="green"
-    document.querySelector("#timer").style.backgroundColor="bisque"
 
   }
   else if(0<time<10){
@@ -26,19 +25,12 @@ var abc=setInterval(function(){
     time--;
     document.querySelector("#timer").innerHTML=time
     document.querySelector("#timer").style.color="red"
-    document.querySelector("#timer").style.backgroundColor="black"
-
-
   }
  }
-
   else{
     clearInterval(abc);
     document.querySelector("#panelbottom").innerHTML=`<h1 id="result">Your Score is ${score} <h1>`
   }
-  
-
-
 }, 1000)
 
 }
