@@ -1,6 +1,6 @@
 var time=35;
 var score=0;
-var hitno=0;
+var hitno=0; 
 function makebubble(){
   var clutter="";
   for(i=0;i<120;i++){
@@ -58,3 +58,24 @@ if(clickednum==hitno){
 })
 }
 clickbubble();
+
+
+var flag=1;
+function abc(){
+  
+var x= document.querySelector("#panelbottom");
+var y = document.querySelector("#bubble");
+var z = document.querySelector("#btn");
+if(flag==1){
+  x.style.backgroundColor=" rgb(75, 75, 75)";
+z.innerHTML="DARK MODE"
+
+flag=0;
+}
+else{
+  x.style.backgroundColor=" rgb(10, 10, 10)";
+  z.innerHTML="LIGHT MODE"
+
+flag=1;
+}
+}

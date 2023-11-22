@@ -41,7 +41,7 @@ html , body{
     width: 7.5rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
@@ -78,11 +78,11 @@ color: rgb(253, 253, 253);
     width: 10px;
     display: flex;
     justify-content: center;
-    background-color: chocolate;
     align-items: center;
     color: white;
     box-shadow: .05rem .05rem rgba(225, 223, 223, 0.53);
     background-image:linear-gradient(rgb(0, 255, 0), rgb(65, 65, 65));
+
 }
 #bubble:hover{
     background-color: black;
@@ -96,4 +96,24 @@ color: rgb(253, 253, 253);
 #result{
     color: white;
     background-color: inherit; 
+}
+button{
+    height: 8%;
+    width: 1207x;
+    padding: 17px;
+    background-image: linear-gradient(rgb(20, 20, 20),rgb(51, 51, 51),grey);
+    color: rgb(255, 167, 167);
+    border: 1px solid gray;
+    border-radius: 50%;
+    font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+transition: all ease;
+
+}
+button:hover{
+    background-image: linear-gradient(rgb(33, 33, 33),rgb(51, 51, 51),rgb(104, 103, 103));
+    cursor: pointer;
 }
