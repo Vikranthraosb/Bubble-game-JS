@@ -9,7 +9,7 @@ function makebubble(){
   }
   document.querySelector("#panelbottom").innerHTML=clutter;
 
-}
+} 
 makebubble(); 
 function runtimer(){
 var abc=setInterval(function(){
@@ -34,7 +34,7 @@ var abc=setInterval(function(){
 }, 1000)
 
 }
-runtimer();
+// runtimer();
 function hitscore(){
 hitno=Math.floor(Math.random()*10);
 document.querySelector("#hit").textContent=hitno;
