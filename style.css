@@ -163,9 +163,16 @@ button:hover{
         width: 6vh;
         font-size: .7vh;
     }
+    .modebtn{
+height: 80%;
+width: 9vh;
+font-weight: bold;
+font-size: 1.4vh;
+
+    }
     #bubble{
-        margin:1.3vw;
-        padding: 2.332vh;
+        margin:1.4vw;
+        padding: 2.392vh;
         font-size: 1.3vh;
         box-shadow:none;
     }
