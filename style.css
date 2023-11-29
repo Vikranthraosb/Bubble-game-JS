@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gilroy';
-    background-color: rgb(0, 0, 0);
 } 
 html , body{
     height: 100%;
@@ -11,26 +10,31 @@ html , body{
     display: flex;
     justify-content: center; 
     align-items: center;
+    background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .main{
     height:95%;
     width: 90%;
     background-color: bisque;
-    border-radius: 10px;
-    border: 1px solid rgb(255, 174, 0);
-    box-shadow: .5px .5px 5px gainsboro;
-
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.825);
     overflow: hidden;
+  
 }
 #paneltop{
     width: 100%;
     height: 11%;
-    background-color:rgb(69, 90, 194);
+    background: #2c353e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f252d, #25303c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d232a, #3a424b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 3px solid rgb(172, 24, 24);
+    
 }
 #update{
     display: flex;
@@ -45,10 +49,10 @@ html , body{
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
-    background-color:rgb(0, 11, 65);
+   
 }
 #hit,#timer,#score{
-    background-color:rgb(0, 11, 65);
+   
 padding:12px ;
 border-radius: 40%;
 color: rgb(253, 253, 253);
@@ -56,8 +60,8 @@ font-size: 1.8vw;
 
 }
 #timer{
-    background-color:rgb(0, 11, 65);
-    color: green;}
+    color: rgb(0, 185, 0);
+}
 #panelbottom{
     display: flex;
     background-color: rgb(10, 10, 10);
@@ -68,6 +72,8 @@ font-size: 1.8vw;
     align-items: center;
     justify-content: center;
     font-size: 2vw;
+    background: linear-gradient(to right, #131f2d, #081122); 
+
 }
 #bubble{
     margin:.8vw;
@@ -80,29 +86,40 @@ font-size: 1.8vw;
     align-items: center;
     color: white;
     font-size: 1.1vw;
-    box-shadow: .05rem .05rem rgba(225, 223, 223, 0.53);
-    background-image:linear-gradient(rgb(0, 255, 0), rgb(65, 65, 65));
-
+    background: linear-gradient(to right, #310b4c, #c31432);
+    
 }
 #bubble:hover{
     background-color: black;
     cursor: pointer;
     box-shadow: .05rem .05rem rgb(0, 255, 38);
-    background-image:linear-gradient(rgba(255, 255, 0, 0.638), rgba(255, 0, 0, 0.545));
-    color: white;
-    
-  
+    background: linear-gradient(to right, #2a0845, #6441A5); 
+        color: white;
 }
+#resultdisplay{
+
+    width: 100%;
+    height:23vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        }
 #result{
     color: white;
     background-color: inherit; 
+}
+.playagainbtn{
+margin: 4vw;
+width: 8vw;
+color: rgba(3, 212, 3, 0.878);
 }
 button{
     font-size: 1vw;
     width: 6vw;
     padding: 17px;
-    background-image: linear-gradient(rgb(20, 20, 20),rgb(51, 51, 51),grey);
-    color: rgb(255, 167, 167);
+    background: linear-gradient(to right, #6f0000, #200122); 
+    color: rgb(139, 139, 139);
     border: 1px solid gray;
     border-radius: 15px;
     font-weight: bold;
@@ -110,12 +127,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: uppercase;
-transition: all ease;
+transition: all ease; 
 
 }
 button:hover{
-    background-image: linear-gradient(rgb(33, 33, 33),rgb(51, 51, 51),rgb(104, 103, 103));
+    background: linear-gradient(to right, #6d0000, #3f0043); 
     cursor: pointer;
+    color: rgb(165, 165, 165);
 }
 
 @media(max-width:600px){
@@ -155,8 +173,25 @@ button:hover{
         
         cursor: pointer;
         background-image:linear-gradient( rgba(204, 0, 0, 0.545));
-        color: white;
-        
+        color: white; 
+    }
+    #resultdisplay{
+        height:23vh;
+        justify-content: space-evenly;
       
+            }
+    #result{
+        color: white;
+        background-color: inherit; 
+        text-align: center;
+        font-size: 4vh;
+    }
+    .playagainbtn{
+    margin: 4vw;
+    width: 18vh;
+    font-size: 1.7vh;
+    font-weight: bold;
     }
 }
+
+
