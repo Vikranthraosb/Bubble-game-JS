@@ -87,6 +87,7 @@ font-size: 1.8vw;
     color: white;
     font-size: 1.1vw;
     background: linear-gradient(to right, #310b4c, #c31432);
+    transition: all 3s ease;
     
 }
 #bubble:hover{
@@ -95,6 +96,8 @@ font-size: 1.8vw;
     box-shadow: .05rem .05rem rgb(0, 255, 38);
     background: linear-gradient(to right, #2a0845, #6441A5); 
         color: white;
+        transition: all 3s ease;
+
 }
 #resultdisplay{
 
